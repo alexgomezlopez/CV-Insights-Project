@@ -1,4 +1,4 @@
-<h1>My Project</h1>
+<h1>CV-Insights</h1>
 
 <pre>
 my_project/
