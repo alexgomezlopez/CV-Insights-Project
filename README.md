@@ -1,34 +1,37 @@
-Repository structure should be as follows:
+<h1>My Project</h1>
 
+<pre>
 my_project/
 │
-├── .git/            # Carpeta del sistema de control de versiones
+├── .git/
 │
-├── venv/            # Carpeta del entorno virtual (agregada a .gitignore)
+├── venv/
 │
-├── .gitignore       # Archivo para especificar archivos/directorios ignorados por Git
+├── .gitignore
 │
-├── requirements.txt  # Archivo con las dependencias del proyecto
+├── requirements.txt
 │
-├── src/             # Carpeta con el código fuente del proyecto
-│   ├── my_module/   # Módulos del proyecto
+├── src/
+│   ├── my_module/
 │   │   ├── __init__.py
 │   │   ├── module1.py
 │   │   └── module2.py
 │   │
-│   └── main.py      # Script principal
+│   └── main.py
 │
-├── tests/           # Carpeta con pruebas unitarias
+├── tests/
 │   ├── test_module1.py
 │   └── test_module2.py
 │
-├── data/            # Carpeta para datos del proyecto (opcional)
+├── data/
 │
-├── docs/            # Carpeta para documentación (opcional)
+├── docs/
 │
-├── .vscode/         # Carpeta de configuración de Visual Studio Code (opcional)
+├── .vscode/
 │
-├── README.md        # Archivo de README para describir el proyecto
+├── README.md
 │
-└── LICENSE          # Archivo de licencia del proyecto
+└── LICENSE
+</pre>
+
 
