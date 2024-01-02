@@ -1,7 +1,8 @@
 <h1>CV-Insights</h1>
+<h2>Repository structure</h2>
 
 <pre>
-my_project/
+CV-Insights-Project/
 │
 ├── .git/
 │
@@ -33,5 +34,3 @@ my_project/
 │
 └── LICENSE
 </pre>
-
-
