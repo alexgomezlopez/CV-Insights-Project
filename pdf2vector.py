@@ -87,4 +87,4 @@ def main():
         st.success("Documentos procesados y vectores subidos correctamente.")
 
 if __name__ == '__main__':
-    main()
+    main
