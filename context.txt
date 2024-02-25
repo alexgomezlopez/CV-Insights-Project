@@ -1,7 +1,7 @@
-Dados los siguientes ejemplos:
-EJEMPLO 1:
-Dada la siguiente pregunta: Cuál es la experiencia de este candidato?
-y este curriculum:
+Given the next examples:
+SAMPLE 1:
+Given the next question: what's the experience of the candidate 10089434.pdf?
+and this cv:
 INFORMATION TECHNOLOGY TECHNICIAN I
 Summary
 Versatile Systems Administrator possessing superior troubleshooting skills for networking issues, end user problems, and network security.
@@ -36,69 +36,6 @@ Installing, configuring, and supporting Linux machines for the open Wi-Fi networ
 Compiling and generating statistical information concerning wireless network traffic using Cacti.
 Configuring wireless LAN router networking and security access.
 Installing and configuring wireless certificates.
-Developing detailed specifications for the acquisition of an Enterprise backup system including systems design, business-case
-documentation, cost benefit analysis, technical diagrams, and work flow documentation.
-Reviewing, evaluating, and analyzing departmental policies, guidelines, procedures, and standards with management and staff.
-Developing test scripts for acceptance, unit, and system testing of Hyperion Phase 1 and MiamiBiz Phase 2.
-Developing Quality Assurance and testing plan for Hyperion Phase 1 and MiamiBiz Phase 2.
-Debugging and logging of errors in Hyperion and MiamiBiz using Team Foundation Server (TFS).
-Participated in various phases of the project life cycle such as: determining requirements, design conceptualization, testing, implementation,
-deployment, and release for the Hyperion and MiamiBiz projects.
-Collaborating on project plans for Hyperion and MiamiBiz.
-Preparing presentations and documentation to demonstrate Hyperion and MiamiBiz functionality or design.
-Monitoring network traffic, and compiling and generating statistical information using Solar Winds.
-Collaborating on Disaster Recovery plan and procedures.
-Researching, evaluating, and recommending new hardware and new software.
-Communicating and defining systems design and requirements for new and existing systems and applications.
-Researching, evaluating, recommending, testing, and implementing third party software/utilities.
-Planning and designing network infrastructure changes â€“ adding/removing servers, appliances, network logical flow.
-Reviewing, evaluating, and analyzing existing system and application viability with management and staff.
-Administering and maintaining shares on the file servers.
-Reviewing server logs to troubleshoot issues.
-Scheduling and applying hot fixes and security patches on the server infrastructure which includes the operating system and application
-software.
-Reviewing systems reporting in SCCM (System Center Configuration Manager).
-Resolving service requests escalated by the Help Desk or other technicians.
-Troubleshooting and analyzing and system problems for root cause analysis.
-Giving and participating in training and education programs to explain upgrades to end users.
-Migrating users' documents from local computer storage to shares on the file servers.
-Configuring, supporting, and maintaining file shares using Distributed File System (DFS)
-Managing, implementing, and testing Enterprise backup infrastructure systems such as the Symantec Veritas Netbackup, Symantec Backup
-Exec System Recovery/Livestate, and VRanger backup servers.
-Managing, configuring, and supporting DataDomain storage.
-Configuring and supporting Microsoft Windows Server 2003, 2008, and 2012.
-Installing, configuring, and supporting Microsoft Windows 7, Windows 8, and Microsoft Office 2007, 2010, and 2013.
-Installing, configuring, and supporting McAfee anti-virus software on servers.
-Migrating Exchange infrastructure from Exchange 2003 to Exchange 2007 and from Exchange 2007 to Exchange 2010.
-Supporting servers in the virtualization infrastructure using VMware vSphere.
-Installing, configuring, and testing Veeam virtual machine backup software and Virtual Desktop Infrastructure (VDI).
-Reviewing systems reporting in System Center Configuration Manager (SCCM).
-Administering and maintaining the Symantec Enterprise Vault servers.
-Managing the Active Directory Domain Controllers (DCs).
-Creating and maintaining Group Policy Objects (GPOs) in Microsoft Active Directory.
-Configuring and supporting Microsoft Exchange Active Sync on devices with Apple iOS and Android mobile operating systems.
-Configuring and supporting Blackberry devices on the Blackberry Enterprise Server to receive Exchange email.
-Developing, testing, designing, and implementing application scripts using languages such as command batch files, Visual Basic Script, and
-PowerShell.
-Creating policies and procedural documentation.
-Information Services Liaison, T Aug 2005 to Aug 2007
-Company Name ï¼ City , State
-Troubleshooting hardware and software problems over the telephone and through remote PC administration software.
-Installing, configuring, and supporting McAfee anti-virus software on desktops.
-Installing, configuring, and supporting BBars computer backup software.
-Developing and maintaining websites on servers running Microsoft SharePoint Server and Internet Information Services (IIS).
-Supporting Systems Management Server (SMS)
-Troubleshooting LAN, WAN, Internet, and Intranet network and security access.
-Troubleshooting network connectivity issues related to TCP/IP, Domain Name Service (DNS), Dynamic Host Configuration Protocol
-(DHCP) protocols, Internet Security and Acceleration (ISA) proxy server, and VPN.
-Troubleshooting web application/page issues, client browsers, and related software.
-Administering and maintaining of end user accounts, permissions, and access rights in in Microsoft Active Directory.
-Administering and maintaining of NTFS security permissions on the file servers.
-Installing, configuring, and maintaining hardware such as: servers, workstations, laptops, printers, and scanners in a Windows Enterprise
-environment.
-Installing, configuring, and supporting printers on the print servers.
-Installing, configuring, and supporting Microsoft Windows Server 2000 and 2003, Microsoft Windows XP and Windows Vista, and
-Microsoft Office XP, 2003, and 2007.
 Education
 Bachelor of Science , Information Technology 2005 Florida International Univeristy ï¼ City , State , United States
 Coursework in Programming, Web Administration, Network Administration, Database Administration, and Systems Administration â€“
@@ -112,7 +49,7 @@ DataDomain, EMC, Enterprise Vault, ePO, file servers, firewall, GPO, HTML, IIS, 
 Microsoft Windows, security, policies, PowerShell, programming, proxy server, servers, scripts, SolarWinds, SQL, StorSimple, troubleshooting,
 TMG, Ubuntu, Visual Basic Script, VBS, Veritas Netbackup, VPN, VRanger, Veeam, VMWare, VDI, virtual manchine, NMap, ZenMap
 
-el resultado obtenido a la salida es este:
-El candidato tiene la siguiente experiencia: ha trabajado en Information Technology Technician desde Aug 2007 hasta la actualidad y también ha trabajado en Information Services Liaison, T desde Aug 2005 hasta Aug 2007.
+the result obtained is:
+The candidate has this experience: he has worked as Information Technology Technician from Aug 2007 to current and also has worked as Information Services Liaison, T from Aug 2005 to Aug 2007.
 
-Con esta información genérame una salida a partir de esta pregunta
+With this information, generate an answer to: 

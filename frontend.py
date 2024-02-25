@@ -34,22 +34,25 @@ def main():
     
     # Crear cadena de recuperación y QA
     qa = RetrievalQA.from_chain_type(
-        llm=OpenAI(model='gpt-3.5-turbo-instruct'),
+        llm=OpenAI(model='babbage-002'),
         chain_type="stuff",
         retriever=vector_store.as_retriever()
     )
 
-    # Cargar contexto desde el archivo
-    context_file_path = 'context.txt'
-    context = load_context_from_file(context_file_path)
+    # # Cargar contexto desde el archivo
+    # context_file_path = 'context.txt'
+    # context = load_context_from_file(context_file_path)
 
     # Mostrar entrada de usuario
     user_question = st.text_input("Ask a question:")
     if user_question:
         st.write(f"Question: {user_question}")
 
+        # # Concatenar el prompt con el contexto y la pregunta del usuario
+        # input_text = f"Question from the user: {user_question}"
+
         # Concatenar el prompt con el contexto y la pregunta del usuario
-        input_text = f"{context}\nPregunta del usuario: {user_question}"
+        input_text = f"Question from the user: {user_question}"
         
         # Obtener respuesta del modelo de lenguaje con el prompt y la pregunta del usuario
         answer = qa.run(input_text)
