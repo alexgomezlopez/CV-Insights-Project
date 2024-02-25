@@ -34,7 +34,7 @@ def main():
     
     # Crear cadena de recuperación y QA
     qa = RetrievalQA.from_chain_type(
-        llm=OpenAI(model='gpt-3.5-turbo-instruct'),
+        llm=OpenAI(model='babbage-002'),
         chain_type="stuff",
         retriever=vector_store.as_retriever()
     )

@@ -1,0 +1,6 @@
+Given the following example:
+
+User Question: Which is the candidate's experience?
+Answer: The candidate (filename: 28243590.pdf) has experience in the Information Technology from August 2007 to 2012. His main skills are Power BI, Python and Java.
+
+This is only an example.

@@ -40,21 +40,3 @@ def get_vector_store(collection_name):
     )
     
     return vector_store
-
-
-# def get_vector_store():
-#     # inicializar un cliente de Qdrant para interactuar con la base de datos vectorial
-#     client = qdrant_client.QdrantClient(
-#         os.getenv("QDRANT_HOST"),
-#         api_key=os.getenv("QDRANT_API_KEY")
-#     )
-#     #utilizaremos este mecanismo de embedding
-#     embeddings = OpenAIEmbeddings()
-#     # creamos un objeto Qdrant, el cliente ya lo hemos definido y el método de embeddings también
-#     vector_store = Qdrant(
-#         client=client, 
-#         collection_name=os.getenv("QDRANT_COLLECTION_NAME"), 
-#         embeddings=embeddings,
-#     )
-    
-#     return vector_store
