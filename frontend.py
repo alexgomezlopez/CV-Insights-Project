@@ -14,31 +14,10 @@ import openai
 from langchain.vectorstores import Qdrant
 import qdrant_client
 
-# def get_pdf_text(pdf_docs):
-#     text = ""
-#     for pdf in pdf_docs:
-#         pdf_reader = PdfReader(pdf)
-#         for page in pdf_reader.pages:
-#             text += page.extract_text()
-#     return text
-
-# def get_vector_store(collection_name):
-#     # inicializar un cliente de Qdrant para interactuar con la base de datos vectorial
-#     client = qdrant_client.QdrantClient(
-#         os.getenv("QDRANT_HOST"),
-#         api_key=os.getenv("QDRANT_API_KEY")
-#     )
-#     # utilizaremos este mecanismo de embedding
-#     embeddings = OpenAIEmbeddings()
-#     # creamos un objeto Qdrant, el cliente ya lo hemos definido y el método de embeddings también
-#     vector_store = Qdrant(
-#         client=client, 
-#         collection_name=collection_name,  # Usa el argumento para especificar el nombre de la colección
-#         embeddings=embeddings,
-#     )
-    
-#     return vector_store
-
+def load_context_from_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        context = file.read()
+    return context
 
 def main():
     load_dotenv()
@@ -60,11 +39,21 @@ def main():
         retriever=vector_store.as_retriever()
     )
 
+    # Cargar contexto desde el archivo
+    context_file_path = 'context.txt'
+    context = load_context_from_file(context_file_path)
+
     # Mostrar entrada de usuario
     user_question = st.text_input("Ask a question:")
     if user_question:
         st.write(f"Question: {user_question}")
-        answer = qa.run(user_question)
+
+        # Concatenar el prompt con el contexto y la pregunta del usuario
+        input_text = f"{context}\nPregunta del usuario: {user_question}"
+        
+        # Obtener respuesta del modelo de lenguaje con el prompt y la pregunta del usuario
+        answer = qa.run(input_text)
+        
         st.write(f"Answer: {answer}")
 
 if __name__ == '__main__':
