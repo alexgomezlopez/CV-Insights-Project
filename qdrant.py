@@ -1,3 +1,5 @@
+# Se sube un documento, se genera el embedding con open ai y se hace una pregunta.
+
 import os
 from PyPDF2 import PdfReader
 import re
