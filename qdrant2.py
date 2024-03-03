@@ -191,7 +191,7 @@ def create_answer_with_context_hf(query, qdrant_client, collection_name):
 
 def classify_text(text):
     classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-    categories = ["Contabilidad", "Abogado", "Agricultura", "Industria textil", "Arte", "Automoción", "Aviación", "Banca", "BPO", "Business Development", "Chef", "Construcción", "Consultor", "Diseñador", "Digital - Media", "Ingeniería", "Finanzas", "Fitness", "Salud", "Recursos Humanos", "Information - Technology", "Relaciones Públicas", "Ventas", "Profesor"] 
+    categories = ["Accounting", "Lawyer", "Agriculture", "Textile Industry", "Art", "Automotive", "Aviation", "Banking", "BPO", "Business Development", "Chef", "Construction", "Consultant", "Designer", "Digital - Media", "Engineering", "Finance", "Fitness", "Health", "Human Resources", "Information Technology", "Public Relations", "Sales", "Teacher"] 
     classification = classifier(text, candidate_labels=categories)
     return classification['labels'][0]
 
@@ -223,7 +223,7 @@ def generate_summary_hf(text):
     summary = summarizer(text, max_length=130, min_length=30, do_sample=False)
     return summary[0]['summary_text']
 
-client = OpenAI(api_key=api_key)
+#client = OpenAI(api_key=api_key)
 
 def generate_summary_openai(text):
     try:
@@ -294,7 +294,7 @@ def main():
                         answer = create_answer_with_context_hf(user_question, qdrant_client, collection_name)
                 st.write(f"Respuesta: {answer}")
 
-        elif action == "Clasificar el curriculum":
+        elif action == "Clasificar el Curriculum":
             with st.spinner('Clasificando el contenido del documento...'):
                 text = get_pdf_text(uploaded_file)[:512]  # Limitando texto para demostración
                 category = classify_text(text)
